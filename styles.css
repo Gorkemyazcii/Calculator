@@ -39,11 +39,11 @@ body {
 
 button {
     height: 50px;
-    background-color: rgb(236, 227, 216);
+    background-color: rgb(90, 90, 89);
     border-radius: 3px;
     border: 1px solid rgb(134, 240, 217);
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 button:hover {
@@ -51,7 +51,7 @@ button:hover {
 }
 
 .operator {
-    color: purple;
+    color: rgb(216, 143, 216);
 }
 
 .allClear {
@@ -61,16 +61,28 @@ button:hover {
 }
 
 .allClear:hover {
-    background-color: aqua;
+    background-color: rgb(62, 52, 92);
 }
 
 .equal {
-    background-color: yellowgreen;
+    background-color: yellow;
+    border-color: aqua;
+    color: rgb(51, 37, 11);
+    /*grid-area: 2/4/6/5;
+    height: 100%;*/
 
 }
 
+.zero {
+    background-color: yellow;
+    border-color: aqua;
+    color: rgb(51, 37, 11);
+    grid-area: 5/1/6/3;
+    height: 100%;
+}
+
 .equal:hover {
-    background-color: rgb(72, 100, 14);
+    background-color: rgb(150, 214, 22);
 
 }
 
