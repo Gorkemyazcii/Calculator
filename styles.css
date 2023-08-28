@@ -46,6 +46,37 @@ button {
     color: rgb(0, 0, 0);
 }
 
+button:hover {
+    background-color: rgb(66, 177, 153);
+}
+
+.operator {
+    color: purple;
+}
+
+.allClear {
+    background-color: brown;
+    border-color: black;
+    color: yellow;
+}
+
+.allClear:hover {
+    background-color: aqua;
+}
+
+.equal {
+    background-color: yellowgreen;
+
+}
+
+.equal:hover {
+    background-color: rgb(72, 100, 14);
+
+}
+
 .calculator-keys {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
 }
