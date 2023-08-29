@@ -71,6 +71,7 @@ button:hover {
 
 .negatif {
     background-color: rgba(73, 69, 69, 1.2);
+    position: relative;
 }
 
 .equal {
