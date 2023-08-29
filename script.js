@@ -96,6 +96,8 @@ function calculate(first, second, operator) {
         } else {
             return first * -1;
         }
+
+
     }
     return second;
 
