@@ -24,6 +24,7 @@ keys.addEventListener('click', function (e) {
 
         console.log('operator', element.value);
         handleOperator(element.value);
+        updateDisplay();
         return;
     }
 
@@ -60,11 +61,45 @@ function handleOperator(nextOperator) {
     const value = parseFloat(displayValue);
     if (firstValue === null) {
         firstValue = value;
+    } else if (operator) {
+        const result = calculate(firstValue, value, operator);
+
+        displayValue = `${parseFloat(result.toFixed(9))}`;
+        firstValue = result;
     }
     waitSecondValue = true;
     operator = nextOperator;
 
     console.log(displayValue, firstValue, operator, waitSecondValue);
+}
+
+function calculate(first, second, operator) {
+    if (operator === '+') {
+        return first + second;
+    } else if (operator === '-') {
+        return first - second;
+    }
+    else if (operator === '*') {
+        return first * second;
+    }
+    else if (operator === '/') {
+        return first / second;
+    }
+    else if (operator === '%') {
+        return first / 100;
+    }
+    else if (operator === 'negatif') {
+        if (displayValue > 0) {
+            return first * -1;
+        } else if (displayValue === "0") {
+            return;
+        } else {
+            return first * -1;
+        }
+    }
+    return second;
+    updateDisplay();
+
 }
 
 function inputNumber(num) {
@@ -85,4 +120,6 @@ function inputDecimal() {
 
 function clear() {
     displayValue = '0';
+    firstValue = null;
+
 }
