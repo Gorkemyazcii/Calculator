@@ -16,8 +16,8 @@ body {
 
 .calculator {
     border: 1px solid gray;
-    border-radius: 25px;
-    width: 400px;
+    border-radius: 10px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,7 +88,7 @@ button:hover {
 }
 
 .zero {
-    border-color: aqua;
+    border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     grid-area: 5/1/6/3;
     height: 100%;
