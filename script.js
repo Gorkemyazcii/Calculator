@@ -98,7 +98,7 @@ function calculate(first, second, operator) {
         }
     }
     return second;
-    updateDisplay();
+
 
 }
 
