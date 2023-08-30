@@ -103,7 +103,7 @@ function inputNumber(num) {
 
   console.log(displayValue, firstValue, operator, waitSecondValue);
 }
-// decimal operatörü için eğer input içerisinde ' . ' yok ise ' . ' ata var ise bir şey yapma
+// decimal operatörü için eğer input içerisinde . işaretini kontrol eden if methodu
 function inputDecimal() {
   if (!displayValue.includes(".")) displayValue += ".";
 }
