@@ -1,5 +1,6 @@
-const display = document.querySelector(".calculator-input");
+//değer atamaları yapıldı
 
+const display = document.querySelector(".calculator-input");
 const keys = document.querySelector(".calculator-keys");
 
 let displayValue = "0";
@@ -12,7 +13,7 @@ updateDisplay();
 function updateDisplay() {
   display.value = displayValue;
 }
-
+//buttona tıklandığında çalışan fonksiyon ve buttonlara özel fonksiyonlar
 keys.addEventListener("click", function (e) {
   const element = e.target;
 
@@ -51,6 +52,7 @@ keys.addEventListener("click", function (e) {
   updateDisplay();
 });
 
+// değer atama işlemleri
 function handleOperator(nextOperator) {
   const value = parseFloat(displayValue);
   if (firstValue === null) {
@@ -58,6 +60,7 @@ function handleOperator(nextOperator) {
   } else if (operator) {
     const result = calculate(firstValue, value, operator);
 
+    // displayValue 9 karakteri geçmemesi için yazıldı
     displayValue = `${parseFloat(result.toFixed(9))}`;
     firstValue = result;
   }
@@ -66,7 +69,7 @@ function handleOperator(nextOperator) {
 
   console.log(displayValue, firstValue, operator, waitSecondValue);
 }
-
+// Hesaplama operatörleri için if else kontrolleri
 function calculate(first, second, operator) {
   if (operator === "+") {
     return first + second;
@@ -89,7 +92,7 @@ function calculate(first, second, operator) {
   }
   return second;
 }
-
+// Numaraların yan yana dizilmesi
 function inputNumber(num) {
   if (waitSecondValue) {
     displayValue = num;
@@ -100,11 +103,11 @@ function inputNumber(num) {
 
   console.log(displayValue, firstValue, operator, waitSecondValue);
 }
-
+// decimal operatörü için eğer input içerisinde ' . ' yok ise ' . ' ata var ise bir şey yapma
 function inputDecimal() {
   if (!displayValue.includes(".")) displayValue += ".";
 }
-
+// Silme operatörü için gerekli fonksiyon
 function clear() {
   displayValue = "0";
   firstValue = null;
