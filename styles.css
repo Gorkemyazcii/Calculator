@@ -72,11 +72,12 @@ button:hover {
 .negatif {
     background-color: rgba(73, 69, 69, 1.2);
     position: relative;
+
 }
 
 .equal {
     background-color: chocolate;
-    border-color: aqua;
+    border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     /*grid-area: 2/4/6/5;
     height: 100%;*/
