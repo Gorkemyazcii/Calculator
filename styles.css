@@ -1,104 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
-
+  font-size: 10px;
 }
 
 body {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .calculator {
-    border: 1px solid gray;
-    border-radius: 10px;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .calculator-input {
-    width: 100%;
-    font-size: 40px;
-    color: #ffffff;
-    height: 70px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: end;
-    padding-left: 10px;
-    padding-right: 10px;
-
+  width: 100%;
+  font-size: 40px;
+  color: #ffffff;
+  height: 70px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: end;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-
-
 button {
-    height: 50px;
-    background-color: rgb(92, 92, 105);
-    border-radius: 3px;
-    border: 1px solid rgb(0, 0, 0);
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+  height: 50px;
+  background-color: rgb(92, 92, 105);
+  border-radius: 3px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 25px;
+  color: rgb(255, 255, 255);
 }
 
 button:hover {
-    background-color: rgb(66, 177, 153);
+  background-color: rgb(66, 177, 153);
 }
 
 .operator {
-    color: rgb(255, 255, 255);
-    background-color: chocolate;
+  color: rgb(255, 255, 255);
+  background-color: chocolate;
 }
 
 .allClear {
-    background-color: rgba(73, 69, 69, 1.2);
-    border-color: black;
-    color: rgb(255, 255, 255);
+  background-color: rgba(73, 69, 69, 1.2);
+  border-color: black;
+  color: rgb(255, 255, 255);
 }
 
 .allClear:hover {
-    background-color: rgb(62, 52, 92);
+  background-color: rgb(62, 52, 92);
 }
 
 .negatif {
-    background-color: rgba(73, 69, 69, 1.2);
-    position: relative;
+  background-color: rgba(73, 69, 69, 1.2);
+  position: relative;
+}
 
+.negatif::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMiA3Ljk5OEg4djRINnYtNEgydi0yaDR2LTRoMnY0aDR6bTEwIDEwaC04di0yaDh6TTE4LjUgNEw0IDE4LjVMNS41IDIwTDIwIDUuNXoiLz48L3N2Zz4=");
+  filter: invert(1);
 }
 
 .equal {
-    background-color: chocolate;
-    border-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    /*grid-area: 2/4/6/5;
+  background-color: chocolate;
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  /*grid-area: 2/4/6/5;
     height: 100%;*/
-
 }
 
 .percentage {
-    background-color: rgba(73, 69, 69, 1.2);
-
+  background-color: rgba(73, 69, 69, 1.2);
 }
 
 .zero {
-    border-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    grid-area: 5/1/6/3;
-    height: 100%;
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  grid-area: 5/1/6/3;
+  height: 100%;
 }
 
 .calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 3px;
-    padding: 3px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3px;
+  padding: 3px;
 }
