@@ -28,6 +28,7 @@ body {
     color: #ffffff;
     height: 70px;
     border: none;
+    border-radius: 10px 10px 0 0;
     background-color: rgba(0, 0, 0, 0.6);
     text-align: end;
     padding-left: 10px;
@@ -36,7 +37,7 @@ body {
 
 button {
     height: 50px;
-    background-color: rgb(92, 92, 105);
+    background-color: #5c5f68;
     border-radius: 3px;
     border: 1px solid rgb(0, 0, 0);
     font-size: 25px;
@@ -44,12 +45,17 @@ button {
 }
 
 button:hover {
-    background-color: rgb(66, 177, 153);
+    background-color: rgba(70, 69, 69, 1.2);
+}
+
+button:active {
+    border: 2px solid rgb(114, 14, 14);
+
 }
 
 .operator {
     color: rgb(255, 255, 255);
-    background-color: chocolate;
+    background-color: #ff9f0a;
 }
 
 .allClear {
@@ -74,7 +80,7 @@ button:hover {
 }
 
 .equal {
-    background-color: chocolate;
+    background-color: #ff9f0a;
     border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     /*grid-area: 2/4/6/5;
@@ -96,5 +102,5 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3px;
-    padding: 3px;
+    padding: 2px;
 }
