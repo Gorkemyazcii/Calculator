@@ -73,6 +73,10 @@ button:active {
     position: relative;
 }
 
+.negatif:hover {
+    background-color: rgb(62, 52, 92);
+}
+
 .negatif::before {
     content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMiA3Ljk5OEg4djRINnYtNEgydi0yaDR2LTRoMnY0aDR6bTEwIDEwaC04di0yaDh6TTE4LjUgNEw0IDE4LjVMNS41IDIwTDIwIDUuNXoiLz48L3N2Zz4=");
     filter: invert(1);
@@ -89,6 +93,10 @@ button:active {
 
 .percentage {
     background-color: rgba(73, 69, 69, 1.2);
+}
+
+.percentage:hover {
+    background-color: rgb(62, 52, 92);
 }
 
 .zero {
